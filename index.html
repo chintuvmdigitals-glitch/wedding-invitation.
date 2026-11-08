@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Invitation</>
+    <title>Wedding Invitation</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff5f8;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
-            padding: 50px;
-            color: #333;
         }
-        h1 {
-            color: #d63384;
+        video {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>మా పెళ్లికి సాదర ఆహ్వానం!</h1>
-    <p>మా వివాహ వేడుకకు మిమ్మల్ని మరియు మీ కుటుంబాన్ని మనస్ఫూర్తిగా ఆహ్వానిస్తున్నాము.</p>
-    <h3>తేదీ: త్వరలో ప్రకటిస్తాము</h3>
+
+    <!-- ఇక్కడ invite-video.mp4 బదులు మీ వీడియో పేరు ఇవ్వండి -->
+    <video autoplay muted loop playsinline>
+        <source src="invite-video.mp4" type="video/mp4">
+        మీ బ్రౌజర్ వీడియో ట్యాగ్‌ని సపోర్ట్ చేయడం లేదు.
+    </video>
+
 </body>
 </html>
