@@ -1,130 +1,44 @@
 <!DOCTYPE html>
-<html lang="te">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L & V వివాహ ఆహ్వాన పత్రిక</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0b0f19;
-            color: #f3f4f6;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .invitation-container {
-            max-width: 480px;
-            margin: auto;
-            background: #111827;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border-left: 1px solid #374151;
-            border-right: 1px solid #374151;
-        }
-        .header-section {
-            padding: 40px 20px 20px 20px;
-        }
-        .header-section h3 {
-            font-family: 'Cinzel', serif;
-            letter-spacing: 3px;
-            color: #9ca3af;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .couple-names {
-            font-family: 'Great Vibes', cursive;
-            font-size: 52px;
-            color: #f43f5e;
-            margin: 15px 0;
-        }
-        .photo-frame {
-            width: 180px;
-            height: 180px;
-            margin: 20px auto;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid #f43f5e;
-            box-shadow: 0 0 20px rgba(244, 63, 94, 0.3);
-        }
-        .photo-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .details-box {
-            background: #1f2937;
-            margin: 20px;
-            padding: 25px;
-            border-radius: 15px;
-            border: 1px solid #374151;
-        }
-        .details-box h2 {
-            font-family: 'Cinzel', serif;
-            color: #fbbf24;
-            font-size: 20px;
-            margin-top: 0;
-        }
-        .details-box p {
-            margin: 10px 0;
-            font-size: 15px;
-            color: #d1d5db;
-        }
-        .map-btn {
-            display: inline-block;
-            background: #f43f5e;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 500;
-            margin-top: 15px;
-            box-shadow: 0 4px 15px rgba(244, 63, 94, 0.4);
-        }
-        .footer-note {
-            padding: 20px;
-            font-size: 13px;
-            color: #9ca3af;
-            border-top: 1px solid #1f2937;
-        }
-    </style>
+    <title>Wedding Invitation - Rahul & Priya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for elegant typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="invitation-container">
+        <div class="floral-top"></div>
         
-        <div class="header-section">
-            <h3>SAVE THE DATE</h3>
-            <p style="font-size: 14px; color: #9ca3af;">మా వివాహ మహోత్సవానికి సాదర ఆహ్వానం</p>
+        <div class="content">
+            <h5 class="subtitle animate-fade">Together with their families</h5>
+            <h1 class="names animate-pop">Rahul <span class="ampersand">&</span> Priya</h1>
             
-            <!-- మీ ఫోటో పెట్టుకోవడానికి (photo.jpg అని పేరు పెట్టండి) -->
-            <div class="photo-frame">
-                <img src="photo.jpg" alt="Vikas & Pallavi">
+            <p class="invite-text animate-slide">
+                Joyfully invite you to celebrate their wedding day
+            </p>
+
+            <div class="event-details animate-fade">
+                <div class="date-box">
+                    <span class="day">Sunday</span>
+                    <span class="date">28 . 11 . 2026</span>
+                    <span class="time">10:30 AM onwards</span>
+                </div>
+                <p class="venue">
+                    <strong>Grand Palace Lawns</strong><br>
+                    Banjara Hills, Hyderabad
+                </p>
             </div>
 
-            <div class="couple-names">
-                Lilly & Vijay
+            <div class="rsvp-section animate-slide">
+                <button onclick="alert('Thank you for responding!')" class="rsvp-btn">RSVP</button>
             </div>
-            <p style="font-size: 16px; color: #fbbf24; letter-spacing: 1px;">బుధవారం, 31 డిసెంబర్ 2026</p>
         </div>
 
-        <div class="details-box">
-            <h2>ముహూర్తం & వేదిక</h2>
-            <p><strong>శుభ ముహూర్తం:</strong> ఉదయం 10:00 గంటలకు</p>
-            <p><strong>వేదిక:</strong> Sreerastu convention </p>
-            
-            <!-- Google Maps లింక్ -->
-            <a https://share.google/TG9azaepPCDv0mVlB>గూగుల్ మ్యాప్ లొకేషన్ చూడండి</a>
-        </div>
-
-        <div class="footer-note">
-            <p>మీ ఆశీస్సులే మాకు శ్రీరామరక్ష.<br>ఇట్లు: కుటుంబ సభ్యులు</p>
-        </div>
-
+        <div class="floral-bottom"></div>
     </div>
 
 </body>
