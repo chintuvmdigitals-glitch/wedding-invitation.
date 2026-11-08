@@ -5,3 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ఇక్కడ invite-video.mp4 బదులు మీ వీడియో పేరు ఇవ్వండి -->
+    <video autoplay muted loop playsinline>
+        <source src="invite-video.mp4" type="video/mp4">
+        మీ బ్రౌజర్ వీడియో ట్యాగ్‌ని సపోర్ట్ చేయడం లేదు.
+    </video>
+
+</body>
+</html>
