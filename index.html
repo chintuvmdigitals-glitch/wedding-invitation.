@@ -1,129 +1,145 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>వివాహ ఆహ్వాన పత్రిక - Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0c0c0c;
+            color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .invitation-card {
+            width: 100%;
+            max-width: 420px;
+            background: linear-gradient(145deg, #161616, #0d0d0d);
+            border: 2px solid #d4af37;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+            overflow: hidden;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .top-tag {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 4px;
+            font-size: 13px;
+            color: #d4af37;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .photo-container {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            color: #ff4d6d;
+            margin: 10px 0;
+        }
+        .welcome-text {
+            font-size: 14px;
+            color: #bbb;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            padding: 0 10px;
+        }
+        .event-box {
+            background: #1f1f1f;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .event-box h3 {
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .event-box p {
+            font-size: 14px;
+            color: #ddd;
+            margin: 6px 0;
+        }
+        .map-btn {
+            display: inline-block;
+            background: #d4af37;
+            color: #0c0c0c;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+        .map-btn:hover {
+            background: #e6c547;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+            border-top: 1px solid #222;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
 
-body {
-    background-color: #f9f6f0;
-    font-family: 'Playfair Display', serif;
-    color: #2c2c2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-}
+    <div class="invitation-card">
+        <div class="top-tag">Save The Date</div>
+        
+        <!-- మీ ఫోటో కోసం (ఫోటో పేరు photo.jpg అని ఇվ్వండి) -->
+        <div class="photo-container">
+            <img src="photo.jpg" alt="Bride and Groom">
+        </div>
 
-.invitation-container {
-    background: #ffffff;
-    width: 90%;
-    max-width: 480px;
-    padding: 40px 20px;
-    text-align: center;
-    border: 2px solid #d4af37; /* Elegant gold border */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    position: relative;
-    border-radius: 8px;
-}
+        <div class="names">
+            Vikas & Pallavi
+        </div>
 
-.subtitle {
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #666;
-    margin-bottom: 15px;
-}
+        <p class="welcome-text">
+            మా జీవితంలో అత్యంత వేడుకైన శుభఘడియకు మిమ్మల్ని మరియు మీ కుటుంబ సభ్యులను మనసారా ఆహ్వానిస్తున్నాము.
+        </p>
 
-.names {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3.8rem;
-    color: #b8860b;
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
+        <div class="event-box">
+            <h3>ముహూర్తం & వేదిక</h3>
+            <p><strong>తేదీ:</strong> బుధవారం, 31 డిసెంబర్ 2026</p>
+            <p><strong>సమయం:</strong> ఉదయం 10:15 గంటలకు</p>
+            <p><strong>వేదిక:</strong> శ్రీ లక్ష్మీ గార్డెన్స్, రాజమండ్రి</p>
+        </div>
 
-.ampersand {
-    font-size: 2.5rem;
-    color: #333;
-}
+        <!-- గూగుల్ మ్యాప్స్ లింక్ -->
+        <a href="https://maps.google.com" target="_blank" class="map-btn">లొకేషన్ చూడండి (Google Map)</a>
 
-.invite-text {
-    font-size: 1.1rem;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 30px;
-}
+        <div class="footer">
+            <p>ఆశీస్సులతో: కుటుంబ సభ్యులు</p>
+        </div>
+    </div>
 
-.event-details {
-    background: #fdfbf7;
-    padding: 20px;
-    border-top: 1px solid #e6d5b8;
-    border-bottom: 1px solid #e6d5b8;
-    margin-bottom: 30px;
-}
-
-.date-box span {
-    display: block;
-}
-
-.day {
-    font-size: 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #888;
-}
-
-.date {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2c2c2c;
-    margin: 5px 0;
-}
-
-.time {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.venue {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.4;
-}
-
-.rsvp-btn {
-    background-color: #b8860b;
-    color: white;
-    border: none;
-    padding: 12px 35px;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: background 0.3s ease;
-    font-family: 'Playfair Display', serif;
-}
-
-.rsvp-btn:hover {
-    background-color: #996f06;
-}
-
-/* Simple entry animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-fade {
-    animation: fadeIn 1.5s ease-out;
-}
-
-.animate-pop {
-    animation: fadeIn 1.2s ease-out 0.3s both;
-}
-
-.animate-slide {
-    animation: fadeIn 1.5s ease-out 0.6s both;
-}
+</body>
+</html>
