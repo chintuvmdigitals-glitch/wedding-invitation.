@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabir & Aira - Wedding Invitation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        weddingBg: '#130818',
+                        weddingCard: '#1c1024',
+                        accentGold: '#e6c5b8',
+                        softGold: '#d4af37',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-weddingBg text-gray-200 font-sans antialiased selection:bg-accentGold selection:text-weddingBg">
 
+    <!-- Hero / Landing Section -->
+    <section class="min-h-screen flex flex-col items-center justify-between p-6 text-center relative overflow-hidden border-b border-accentGold/20">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e6c5b8_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="w-full flex justify-start pt-4 z-10">
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="text-accentGold text-sm tracking-widest uppercase border border-accentGold/30 px-4 py-2 rounded-full hover:bg-accentGold/10 transition">
+                ← Back
+            </button>
+        </div>
+
+        <div class="z-10 my-auto py-12">
+            <div class="w-48 h-48 mx-auto rounded-full border border-accentGold/40 flex items-center justify-center p-4 mb-8 shadow-2xl relative">
+                <div class="absolute inset-2 rounded-full border border-accentGold/20"></div>
+                <h1 class="font-serif text-5xl tracking-widest text-accentGold italic font-light">K & A</h1>
+            </div>
+            <p class="uppercase tracking-[0.3em] text-xs text-accentGold/70 mb-4">The Royal Union</p>
+            
+            <a href="#invitation" class="inline-block mt-8 bg-accentGold text-weddingBg font-medium px-8 py-4 tracking-widest uppercase text-xs rounded-sm hover:bg-white transition duration-300 shadow-lg">
+                Open Invitation
+            </a>
+        </div>
+
+        <div class="pb-6 text-accentGold/50 text-xs tracking-widest uppercase">Scroll Down</div>
+    </section>
+
+    <!-- Main Invitation Content -->
+    <div id="invitation" class="max-w-md mx-auto px-4 py-16 space-y-24">
+
+        <!-- Couple Intro -->
+        <section class="text-center space-y-6">
+            <div class="rounded-t-full rounded-b-2xl overflow-hidden border border-accentGold/30 shadow-2xl max-w-xs mx-auto">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&q=80&w=800" alt="Kabir & Aira" class="w-full h-96 object-cover object-center filter brightness-90">
+            </div>
+            <p class="font-serif italic text-lg text-accentGold/95 px-4">
+                "You are invited to a day of love, laughter, and new beginnings as we start our forever journey."
+            </p>
+        </section>
+
+        <!-- Meet the Couple -->
+        <section class="space-y-12 text-center">
+            <div>
+                <span class="text-xs uppercase tracking-[0.3em] text-accentGold/60">Two Hearts, One Journey</span>
+                <h2 class="font-serif text-3xl text-accentGold mt-2">Meet the Couple</h2>
+                <div class="w-12 h-[1px] bg-accentGold/40 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Groom -->
+            <div class="bg-weddingCard border border-accentGold/20 rounded-xl p-6 shadow-xl space-y-4">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border border-accentGold/40">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400" alt="Kabir Sharma" class="w-full h-full object-cover">
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-accentGold/60 block">The Groom</span>
+                <h3 class="font-serif text-2xl text-accentGold">Kabir Sharma</h3>
+                <p class="text-xs text-gray-400 font-light">Son of Mr. Rajesh & Mrs. Sarita Sharma</p>
+            </div>
+
+            <!-- Bride -->
+            <div class="bg-weddingCard border border-accentGold/20 rounded-xl p-6 shadow-xl space-y-4">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border border-accentGold/40">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Aira Verma" class="w-full h-full object-cover">
+                </div>
+                <span class="text-[10px] uppercase tracking-widest text-accentGold/60 block">The Bride</span>
+                <h3 class="font-serif text-2xl text-accentGold">Aira Verma</h3>
+                <p class="text-xs text-gray-400 font-light">Daughter of Mr. Sunil & Mrs. Kavita Verma</p>
+            </div>
+        </section>
+
+        <!-- Save the Date & Countdown -->
+        <section class="bg-gradient-to-b from-weddingCard to-weddingBg border border-accentGold/30 rounded-2xl p-8 text-center space-y-8 shadow-2xl relative overflow-hidden">
+            <span class="text-xs uppercase tracking-[0.3em] text-accentGold/60 block">Our Celebration</span>
+            <h2 class="font-serif text-4xl text-accentGold">Save the Date</h2>
+            <div class="font-serif text-2xl text-white tracking-widest border-y border-accentGold/20 py-4">
+                February 14, 2027
+            </div>
+            
+            <!-- Countdown Timer -->
+            <div class="grid grid-cols-4 gap-2 text-center pt-2">
+                <div class="bg-weddingBg/80 p-3 rounded border border-accentGold/20">
+                    <span id="days" class="block font-serif text-2xl text-accentGold">97</span>
+                    <span class="text-[9px] uppercase tracking-wider text-gray-400">Days</span>
+                </div>
+                <div class="bg-weddingBg/80 p-3 rounded border border-accentGold/20">
+                    <span id="hours" class="block font-serif text-2xl text-accentGold">04</span>
+                    <span class="text-[9px] uppercase tracking-wider text-gray-400">Hours</span>
+                </div>
+                <div class="bg-weddingBg/80 p-3 rounded border border-accentGold/20">
+                    <span id="minutes" class="block font-serif text-2xl text-accentGold">05</span>
+                    <span class="text-[9px] uppercase tracking-wider text-gray-400">Mins</span>
+                </div>
+                <div class="bg-weddingBg/80 p-3 rounded border border-accentGold/20">
+                    <span id="seconds" class="block font-serif text-2xl text-accentGold">26</span>
+                    <span class="text-[9px] uppercase tracking-wider text-gray-400">Secs</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Schedule -->
+        <section class="space-y-8 text-center">
+            <div>
+                <span class="text-xs uppercase tracking-[0.3em] text-accentGold/60">Join Us In Our Joy</span>
+                <h2 class="font-serif text-3xl text-accentGold mt-2">Events</h2>
+            </div>
+
+            <div class="space-y-6 text-left">
+                <!-- Event 1 -->
+                <div class="bg-weddingCard border border-accentGold/20 rounded-xl p-6 space-y-3">
+                    <h3 class="font-serif text-xl text-accentGold">Mehendi</h3>
+                    <p class="text-xs text-accentGold/70">13 Feb 2027 • 4:00 PM</p>
+                    <p class="text-xs text-gray-300">A relaxed evening of music, henna, and getting together with our loved ones.</p>
+                </div>
+                <!-- Event 2 -->
+                <div class="bg-weddingCard border border-accentGold/20 rounded-xl p-6 space-y-3">
+                    <h3 class="font-serif text-xl text-accentGold">Sangeet</h3>
+                    <p class="text-xs text-accentGold/70">13 Feb 2027 • 7:00 PM</p>
+                    <p class="text-xs text-gray-300">A night of dinner and dancing with our family and friends in a grand celebration.</p>
+                </div>
+                <!-- Event 3 -->
+                <div class="bg-weddingCard border border-accentGold/20 rounded-xl p-6 space-y-3">
+                    <h3 class="font-serif text-xl text-accentGold">The Wedding</h3>
+                    <p class="text-xs text-accentGold/70">14 Feb 2027 • 10:30 AM</p>
+                    <p class="text-xs text-gray-300">Join us as we exchange our vows and start our new journey together forever.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue & Map -->
+        <section class="text-center space-y-6">
+            <div>
+                <span class="text-xs uppercase tracking-[0.3em] text-accentGold/60">Location</span>
+                <h2 class="font-serif text-3xl text-accentGold mt-2">The Venue</h2>
+            </div>
+
+            <div class="bg-weddingCard border border-accentGold/20 rounded-xl p-6 space-y-4">
+                <h3 class="font-serif text-xl text-accentGold">Palace Gardens</h3>
+                <p class="text-xs text-gray-300">Plot No. 12, Marine Drive, Mumbai</p>
+                <div class="pt-2">
+                    <a href="https://maps.google.com" target="_blank" class="inline-block border border-accentGold text-accentGold text-xs uppercase tracking-widest px-6 py-3 rounded hover:bg-accentGold hover:text-weddingBg transition">
+                        Get Directions ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outro / Closing -->
+        <section class="text-center space-y-6 pt-8 border-t border-accentGold/20">
+            <div class="w-20 h-20 mx-auto rounded-full border border-accentGold/40 flex items-center justify-center">
+                <span class="font-serif text-accentGold italic">K & A</span>
+            </div>
+            <p class="font-serif italic text-accentGold/90 text-sm px-4">
+                "May your life together be full of love and your love be full of life."
+            </p>
+            <p class="text-[11px] uppercase tracking-widest text-accentGold/60 pt-4">
+                Thank you for being part of our journey.<br>Your presence is the greatest gift of all.
+            </p>
+        </section>
+
+    </div>
+
+</body>
+</html>
